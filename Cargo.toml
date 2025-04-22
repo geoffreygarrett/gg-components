@@ -1,0 +1,39 @@
+[package]
+name = "gg-components"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leptos = { version = "=0.7.6", features = ["delegation"] }
+leptos_router = { version = "=0.7.6" }
+leptos_axum = { version = "=0.7.6", optional = true }
+leptos_meta = { version = "=0.7.6" }
+leptos-node-ref = "0.1.0"
+leptos-maybe-callback = "0.1.0"
+leptos-typed-fallback-show = "0.1.0"
+
+tailwind_fuse = { version = "0.3.2", features = ["variant"] }
+clsx = "0.1.1"
+lucide-leptos = "1.1.0"
+
+radix-leptos-context = "0.0.2"
+radix-leptos-progress = "0.0.2"
+radix-leptos-primitive = "0.0.2"
+radix-leptos-label = "0.0.2"
+radix-leptos-avatar = "0.0.2"
+radix-leptos-id = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-primitive" }
+radix-leptos-separator = "0.0.2"
+
+[patch.crates-io]
+leptos-node-ref = { git = "https://github.com/geoffreygarrett/leptos-utils", branch = "feature/any-node-ref" }
+leptos-maybe-callback = { git = "https://github.com/geoffreygarrett/leptos-utils", branch = "feature/maybe-callback" }
+leptos-typed-fallback-show = { git = "https://github.com/geoffreygarrett/leptos-utils", branch = "feature/typed-fallback-show" }
+radix-leptos-label = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-label" }
+radix-leptos-primitive = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-primitive" }
+radix-leptos-compose-refs = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-compose-refs" }
+radix-leptos-avatar = { git = "https://github.com/geoffreygarrett/radix", branch = "updates/leptos-0.7-avatar" }
+radix-leptos-context = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-context" }
+radix-leptos-progress = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-progress" }
+radix-leptos-separator = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-separator" }
+leptos-routable = { git = "https://github.com/geoffreygarrett/leptos-routable", branch = "main" }
+leptos_image = { git = "https://github.com/geoffreygarrett/leptos-image", branch = "main" }
