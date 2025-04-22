@@ -3,11 +3,28 @@ name = "gg-components"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+ssr = [
+#    "leptos-use/ssr",
+    "leptos/ssr",
+    "leptos_meta/ssr",
+    "leptos_router/ssr",
+#    "leptos-use/axum",
+]
+hydrate = [
+    "leptos/hydrate",
+]
+install = [
+    "dep:walkdir",
+]
+default = []
+
 [dependencies]
-leptos = { version = "=0.7.6", features = ["delegation"] }
-leptos_router = { version = "=0.7.6" }
-leptos_axum = { version = "=0.7.6", optional = true }
-leptos_meta = { version = "=0.7.6" }
+walkdir = { version = "2.5.0", optional = true }
+leptos = { version = "0.7.6", features = ["delegation"] }
+leptos_router = { version = "0.7.6" }
+leptos_axum = { version = "0.7.6", optional = true }
+leptos_meta = { version = "0.7.6" }
 leptos-node-ref = "0.1.0"
 leptos-maybe-callback = "0.1.0"
 leptos-typed-fallback-show = "0.1.0"
@@ -16,13 +33,13 @@ tailwind_fuse = { version = "0.3.2", features = ["variant"] }
 clsx = "0.1.1"
 lucide-leptos = "1.1.0"
 
-radix-leptos-context = "0.0.2"
-radix-leptos-progress = "0.0.2"
-radix-leptos-primitive = "0.0.2"
-radix-leptos-label = "0.0.2"
-radix-leptos-avatar = "0.0.2"
+radix-leptos-context = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-context" }
+radix-leptos-progress = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-progress" }
+radix-leptos-primitive =  { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-primitive" }
+radix-leptos-label = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-label" }
+radix-leptos-avatar = { git = "https://github.com/geoffreygarrett/radix", branch = "updates/leptos-0.7-avatar" }
 radix-leptos-id = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-primitive" }
-radix-leptos-separator = "0.0.2"
+radix-leptos-separator = { git = "https://github.com/geoffreygarrett/radix", branch = "update/leptos-0.7-separator" }
 
 [patch.crates-io]
 leptos-node-ref = { git = "https://github.com/geoffreygarrett/leptos-utils", branch = "feature/any-node-ref" }

@@ -656,6 +656,7 @@ dependencies = [
  "radix-leptos-progress",
  "radix-leptos-separator",
  "tailwind_fuse",
+ "walkdir",
 ]
 
 [[package]]
@@ -1050,9 +1051,9 @@ checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "leptos"
-version = "0.7.6"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d8b0207d07abbcc8370ff224ac43e21ed241990f1a5a9c1ee6c7d1869a526c77"
+checksum = "26b8731cb00f3f0894058155410b95c8955b17273181d2bc72600ab84edd24f1"
 dependencies = [
  "any_spawner",
  "base64",
@@ -1166,9 +1167,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_axum"
-version = "0.7.6"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "546835a6d4b9cd71cad61da615d21479ddd38784532ca02df3baee20882dab2e"
+checksum = "b5e4b8a1c190800d24f0c79e6c320186ad31ca8800e54c057ad65cdf452ff7d0"
 dependencies = [
  "any_spawner",
  "axum",
@@ -1236,9 +1237,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_integration_utils"
-version = "0.7.6"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2159cfc7149304f9923060793ba7be18bb1cc4c09a5d97ee773e6597c46acd24"
+checksum = "42de4c69817c33179fdf21460b3429a2e4899dc646e1673eb87b2e81e325ddd0"
 dependencies = [
  "futures",
  "hydration_context",
@@ -1273,9 +1274,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_meta"
-version = "0.7.6"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae99b57688f3bc6de5e4ae3373ea3af2070f1d31fb0a5b2262a2d6bf95c3e39b"
+checksum = "448a6387e9e2cccbb756f474a54e36a39557127a3b8e46744b6ef6372b50f575"
 dependencies = [
  "futures",
  "indexmap",
@@ -1289,9 +1290,9 @@ dependencies = [
 
 [[package]]
 name = "leptos_router"
-version = "0.7.6"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9800dc567465e7e265d76061b68be5fa760de9e2e9e182cf2ae9130d1d936883"
+checksum = "4168ead6a9715daba953aa842795cb2ad81b6e011a15745bd3d1baf86f76de95"
 dependencies = [
  "any_spawner",
  "either_of",
